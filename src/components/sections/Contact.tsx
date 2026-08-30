@@ -18,14 +18,14 @@ export function Contact() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-            <div className="md:col-span-4 md:-ml-4">
-              <h3 className="text-3xl md:text-4xl font-black uppercase mb-4 leading-tight">
+            <div className="md:col-span-4 md:-ml-4 text-center md:text-left">
+              <h3 className="text-3xl md:text-4xl font-black uppercase mb-3 leading-tight">
                 Let's<br />build<br />something.
               </h3>
               <p className="font-mono text-sm mb-6 text-gray-700">
                 Open to research collaborations, internships, and engineering roles.
               </p>
-              <div className="space-y-3 font-mono text-sm font-bold">
+              <div className="space-y-3 font-mono text-sm font-bold inline-block text-left">
                 <a
                   href="mailto:jay20gopal@gmail.com"
                   className="flex items-center gap-3 hover:text-neo-blue transition-colors group"
@@ -50,23 +50,11 @@ export function Contact() {
                   </div>
                   <span>Chennai, IN · Remote</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 bg-black text-white flex items-center justify-center shrink-0">
-                    <i className="ri-github-fill" />
-                  </div>
-                  <span>github.com/j4yop</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 bg-black text-white flex items-center justify-center shrink-0">
-                    <i className="ri-linkedin-fill" />
-                  </div>
-                  <span>linkedin.com/in/jaygopaltripathy</span>
-                </div>
               </div>
             </div>
 
-            <div className="md:col-span-8 -mr-4">
-              <div className="w-full" style={{ height: "460px" }}>
+            <div className="md:col-span-8 -mr-4 flex items-end justify-end" style={{ minHeight: "440px" }}>
+              <div className="w-full max-w-[640px] translate-y-4" style={{ height: "420px" }}>
                 <TypingKeyboard
                   autoTypeText="Hi Jay — open to research, internships, and engineering roles. Drop me a message.       "
                   accentColor="#3b82f6"
