@@ -2,6 +2,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
+const isVercel = !!process.env.VERCEL;
+const base = isVercel ? "/" : "/jaygopal-portfolio/";
+
 export default defineConfig({
   plugins: [react()],
   resolve: {
@@ -9,5 +12,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/jaygopal-portfolio/",
+  base,
 });

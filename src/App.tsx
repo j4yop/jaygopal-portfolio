@@ -25,13 +25,7 @@ export default function App() {
   }, []);
 
   return (
-    <MagneticCursor
-      magneticFactor={0.45}
-      blendMode="exclusion"
-      cursorSize={28}
-      cursorColor="#FFFDF5"
-      contrastBoost={1.5}
-    >
+    <MagneticCursor cursorSize={28} cursorColor="#FFFDF5">
       <div className="text-neo-black font-display antialiased selection:bg-neo-black selection:text-neo-yellow">
         <ProgressBar />
         <Nav />

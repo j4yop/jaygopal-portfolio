@@ -2,7 +2,7 @@ export function About() {
   return (
     <section id="about" className="py-24 px-4 max-w-7xl mx-auto border-x-4 border-black bg-white my-12 shadow-hard-lg">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-        <div className="md:col-span-4 reveal">
+        <div className="md:col-span-4 reveal max-w-[280px] md:max-w-none mx-auto md:mx-0">
           <div className="aspect-square bg-gray-200 border-4 border-black relative shadow-hard overflow-hidden group">
             <img src={`${import.meta.env.BASE_URL}images/avatar.svg`} alt="Jay Gopal Tripathy" className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-300" />
             <span className="absolute top-2 left-2 bg-neo-red text-white px-2 font-mono text-xs border border-black z-10">AVATAR.JPG</span>

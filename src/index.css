@@ -7,13 +7,19 @@
     scroll-behavior: smooth;
   }
   body {
-    cursor: none;
     background-color: #FFFDF5;
     background-image:
       radial-gradient(#000 1px, transparent 1px),
       linear-gradient(to right, #e5e5e5 1px, transparent 1px),
       linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
     background-size: 40px 40px, 100px 100px, 100px 100px;
+    overflow-x: hidden;
+  }
+  @media (max-width: 1023px) {
+    body { cursor: auto; }
+  }
+  @media (min-width: 1024px) {
+    body { cursor: none; }
   }
 }
 

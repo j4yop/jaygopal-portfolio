@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:vercel": "VITE_BASE_PATH=/ tsc -b && vite build",
+    "build:gh": "VITE_BASE_PATH=/jaygopal-portfolio/ tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },

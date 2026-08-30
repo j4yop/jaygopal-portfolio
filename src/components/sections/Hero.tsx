@@ -11,7 +11,7 @@ export function Hero({ glitch: Glitch }: { glitch: ComponentType<any> }) {
       <div
         className="absolute bottom-1/3 right-[10%] w-24 h-24 bg-neo-pink rounded-full border-4 border-black shadow-hard hidden lg:block animate-pulse"
       ></div>
-      <div className="absolute top-20 right-20 text-9xl opacity-5 font-black select-none pointer-events-none">CODE</div>
+      <div className="absolute top-20 right-20 text-9xl opacity-5 font-black select-none pointer-events-none hidden md:block">CODE</div>
 
       <div className="relative z-10 text-center max-w-5xl">
         <div

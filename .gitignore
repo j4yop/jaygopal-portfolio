@@ -4,3 +4,4 @@ dist
 *.tsbuildinfo
 .vite
 scripts/render-name.mjs.tmp
+.vercel
