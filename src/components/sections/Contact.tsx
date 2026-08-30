@@ -56,7 +56,7 @@ export function Contact() {
             <div className="md:col-span-8 -mr-4 flex items-end justify-end pb-8" style={{ minHeight: "520px" }}>
               <div className="w-full max-w-[640px] translate-y-12" style={{ height: "440px" }}>
                 <TypingKeyboard
-                  autoTypeText="Hi Jay — open to research, internships, and engineering roles. Drop me a message.       "
+                  autoTypeText="Hi  — open to research, internships, and engineering roles. Drop me a message.       "
                   accentColor="#3b82f6"
                   secondaryAccent="#a855f7"
                   scale={0.8}
