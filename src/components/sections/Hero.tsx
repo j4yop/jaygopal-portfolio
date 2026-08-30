@@ -1,26 +1,19 @@
 import type { ComponentType } from "react";
 import { useEffect, useState } from "react";
-import { InteractiveParticles } from "../ui/interactive-particles";
+import { ParticleName } from "../ui/particle-name";
 import { ErrorBoundary } from "../ErrorBoundary";
 
-function ParticleName({ src }: { src: string }) {
+function NameParticles({ src }: { src: string }) {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
 
   return (
-    <div className="absolute inset-0 z-0 h-full w-full pointer-events-none">
+    <div className="absolute inset-0 z-0 h-full w-full pointer-events-auto">
       <ErrorBoundary>
-        <InteractiveParticles
+        <ParticleName
           src={src}
-          allowUpload={false}
-          background="#FBFF48"
           color="#121212"
-          size={1.0}
-          randomness={1.2}
-          depth={1.4}
-          touchRadius={0.25}
-          threshold={64}
         />
       </ErrorBoundary>
     </div>
@@ -31,7 +24,7 @@ export function Hero({ glitch: Glitch }: { glitch: ComponentType<any> }) {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center px-4 pt-20 relative overflow-hidden border-b-4 border-black bg-neo-white">
       {/* Particle name — overlays the text on capable browsers */}
-      <ParticleName src="/images/name-particles.png?v=3" />
+      <ParticleName src="/images/name-particles.png?v=4" />
 
       {/* Decorative shapes */}
       <div className="absolute top-1/3 left-[10%] w-16 h-16 bg-neo-blue border-4 border-black shadow-hard animate-bounce hidden lg:block rotate-12 z-10"></div>
@@ -43,10 +36,7 @@ export function Hero({ glitch: Glitch }: { glitch: ComponentType<any> }) {
           <span className="font-mono font-bold">SYSTEM STATUS: SHIPPING</span>
         </div>
 
-        <h1 className="text-[12vw] md:text-[9vw] leading-[0.85] font-black uppercase tracking-tighter mb-6 reveal mix-blend-darken">
-          JAY GOPAL<br />
-          <span className="text-white text-stroke-black">TRIPATHY</span>
-        </h1>
+        <div className="h-[280px] md:h-[360px] mb-6 reveal" aria-label="JAY GOPAL TRIPATHY"></div>
 
         <p className="font-mono text-lg md:text-2xl max-w-3xl mx-auto mb-10 bg-neo-yellow border-2 border-black p-4 shadow-hard reveal rotate-1">
           AI engineer building systems that work in the wild —{" "}
