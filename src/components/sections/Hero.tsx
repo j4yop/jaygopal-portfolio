@@ -24,7 +24,7 @@ export function Hero({ glitch: Glitch }: { glitch: ComponentType<any> }) {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center px-4 pt-20 relative overflow-hidden border-b-4 border-black bg-neo-white">
       {/* Particle name — overlays the text on capable browsers */}
-      <ParticleName src="/images/name-particles.png?v=4" />
+      <ParticleName src={`${import.meta.env.BASE_URL}images/name-particles.png`} />
 
       {/* Decorative shapes */}
       <div className="absolute top-1/3 left-[10%] w-16 h-16 bg-neo-blue border-4 border-black shadow-hard animate-bounce hidden lg:block rotate-12 z-10"></div>
