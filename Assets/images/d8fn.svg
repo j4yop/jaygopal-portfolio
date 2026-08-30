@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <rect width="1600" height="900" fill="#A855F7"/>
+  <g font-family="'Space Grotesk','Arial Black',sans-serif" font-weight="900" fill="#fff">
+    <rect x="80" y="80" width="220" height="60" fill="#000" stroke="#fff" stroke-width="4"/>
+    <text x="100" y="125" font-size="32" font-family="'JetBrains Mono',monospace" fill="#FBFF48">D8FN</text>
+    <text x="80" y="300" font-size="120" letter-spacing="-4">FLOOD</text>
+    <text x="80" y="430" font-size="120" letter-spacing="-4" fill="#FBFF48">MAPPING.</text>
+    <text x="80" y="600" font-size="60" fill="#fff">UNet × D8 Flow Routing</text>
+    <text x="80" y="680" font-size="60" fill="#fff">Physics-Informed Deep Learning</text>
+    <text x="80" y="780" font-size="36" font-family="'JetBrains Mono',monospace">// SAR · DEM · HAND · RESEARCH</text>
+  </g>
+  <g fill="none" stroke="#fff" stroke-width="3" opacity="0.7">
+    <path d="M 1100 200 Q 1200 300 1300 250 T 1500 350"/>
+    <path d="M 1100 280 Q 1200 380 1300 330 T 1500 430"/>
+    <path d="M 1100 360 Q 1200 460 1300 410 T 1500 510"/>
+    <path d="M 1100 440 Q 1200 540 1300 490 T 1500 590"/>
+    <path d="M 1100 520 Q 1200 620 1300 570 T 1500 670"/>
+  </g>
+</svg>

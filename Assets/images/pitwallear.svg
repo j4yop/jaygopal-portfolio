@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#000" stroke-width="1" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#FBFF48"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <g font-family="'Space Grotesk','Arial Black',sans-serif" font-weight="900" fill="#000">
+    <rect x="80" y="80" width="240" height="60" fill="#fff" stroke="#000" stroke-width="4"/>
+    <text x="100" y="125" font-size="32" font-family="'JetBrains Mono',monospace">PITWALLEAR</text>
+    <text x="80" y="320" font-size="160" letter-spacing="-4">F1 RADIO.</text>
+    <text x="80" y="500" font-size="160" letter-spacing="-4" fill="#fff" stroke="#000" stroke-width="4">DRIVER STRESS.</text>
+    <text x="80" y="680" font-size="160" letter-spacing="-4">DECODED.</text>
+    <g transform="translate(1080,360)">
+      <circle r="180" fill="#FF70A6" stroke="#000" stroke-width="6"/>
+      <text text-anchor="middle" y="-30" font-size="64">🎙️</text>
+      <text text-anchor="middle" y="60" font-size="36" font-family="'JetBrains Mono',monospace">MULTI-AGENT</text>
+      <text text-anchor="middle" y="100" font-size="36" font-family="'JetBrains Mono',monospace">AI</text>
+    </g>
+  </g>
+</svg>

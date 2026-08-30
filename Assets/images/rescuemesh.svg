@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#fff" stroke-width="1" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#121212"/>
+  <rect width="1600" height="900" fill="url(#grid2)"/>
+  <g font-family="'Space Grotesk','Arial Black',sans-serif" font-weight="900" fill="#33FF57">
+    <rect x="80" y="80" width="280" height="60" fill="#000" stroke="#33FF57" stroke-width="4"/>
+    <text x="100" y="125" font-size="32" font-family="'JetBrains Mono',monospace">RESCUEMESH</text>
+    <text x="80" y="300" font-size="140" letter-spacing="-4" fill="#fff">OFFLINE.</text>
+    <text x="80" y="440" font-size="140" letter-spacing="-4" fill="#fff">DISASTER.</text>
+    <text x="80" y="580" font-size="140" letter-spacing="-4">RESPONSE.</text>
+    <text x="80" y="740" font-size="36" fill="#FBFF48" font-family="'JetBrains Mono',monospace">// GEMMA 4 · MESH · FLUTTER</text>
+  </g>
+  <g stroke="#33FF57" stroke-width="4" fill="none">
+    <circle cx="1280" cy="450" r="100"/>
+    <circle cx="1180" cy="350" r="60"/>
+    <circle cx="1380" cy="350" r="60"/>
+    <circle cx="1180" cy="550" r="60"/>
+    <circle cx="1380" cy="550" r="60"/>
+    <line x1="1280" y1="450" x2="1180" y2="350"/>
+    <line x1="1280" y1="450" x2="1380" y2="350"/>
+    <line x1="1280" y1="450" x2="1180" y2="550"/>
+    <line x1="1280" y1="450" x2="1380" y2="550"/>
+  </g>
+</svg>
