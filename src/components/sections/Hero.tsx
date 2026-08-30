@@ -9,7 +9,7 @@ function ParticleName({ src }: { src: string }) {
   if (!mounted) return null;
 
   return (
-    <div className="absolute inset-0 z-0 pointer-events-none">
+    <div className="absolute inset-0 z-0 h-full w-full pointer-events-none">
       <ErrorBoundary>
         <InteractiveParticles
           src={src}
