@@ -329,16 +329,16 @@ export function InteractiveParticles({
 
       uniforms = {
         uTime: { value: 0 },
-        uRandom: { value: 1.0 },
-        uDepth: { value: 2.0 },
-        uSize: { value: 0.0 },
+        uRandom: { value: randomness },
+        uDepth: { value: depth },
+        uSize: { value: size },
         uTextureSize: { value: new THREE.Vector2(imgWidth, imgHeight) },
         uTexture: { value: texture },
         uTouch: { value: null },
         uColor: { value: new THREE.Color(color) },
       };
 
-      const material = new THREE.RawShaderMaterial({
+      const material = new THREE.ShaderMaterial({
         uniforms,
         vertexShader: VERT,
         fragmentShader: FRAG,
@@ -392,10 +392,6 @@ export function InteractiveParticles({
       uniforms.uTouch.value = touch.texture;
 
       applyScale();
-
-      gsap.fromTo(uniforms.uSize, { value: 0.5 }, { value: size, duration: 1.0 });
-      gsap.to(uniforms.uRandom, { value: randomness, duration: 1.0 });
-      gsap.fromTo(uniforms.uDepth, { value: 40.0 }, { value: depth, duration: 1.5 });
     });
 
     const applyScale = () => {
