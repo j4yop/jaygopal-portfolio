@@ -25,7 +25,7 @@ export function Hero({ glitch: Glitch }: { glitch: ComponentType<any> }) {
           className="text-[13vw] md:text-[10vw] leading-[0.8] font-black uppercase tracking-tighter mb-6 reveal mix-blend-darken"
         >
           JAY GOPAL<br />
-          <span className="text-white text-stroke-black" style="-webkit-text-stroke: 3px black;">TRIPATHY</span>
+          <span className="text-white text-stroke-black" style={{ WebkitTextStroke: "3px black" }}>TRIPATHY</span>
         </h1>
 
         <p
