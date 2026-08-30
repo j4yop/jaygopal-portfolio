@@ -17,13 +17,17 @@
 
 ### Develop
 
-- `npm install` — install deps
-- `npm run dev` — start dev server on `localhost:5173`
+```
+npm install
+npm run dev
+```
 
 ### Build
 
-- `npm run build:gh` — build for GitHub Pages (base: `/jaygopal-portfolio/`)
-- `npm run build:vercel` — build for Vercel (base: `/`)
+```
+npm run build:gh
+npm run build:vercel
+```
 
 ---
 
