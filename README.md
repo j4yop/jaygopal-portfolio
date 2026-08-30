@@ -1,15 +1,13 @@
 # Jay Gopal Tripathy — Portfolio
 
-Personal portfolio for Jay Gopal Tripathy — B.Tech CSE (AI & Robotics) at VIT Chennai.
+Personal site — React + Vite + TypeScript, NeoBrutalist design.
 
-**Live:** https://j4yop.github.io/jaygopal-portfolio/
+**Live:** [jaygopal-portfolio.vercel.app](https://jaygopal-portfolio.vercel.app)
 
 ## Stack
 
-- React 19 + TypeScript + Vite
-- TailwindCSS 3
-- shadcn-style UI components (vendored)
-- GitHub Actions → GitHub Pages
+React 19 · Vite · TypeScript · TailwindCSS · GSAP + vecteur (magnetic cursor)
+Automated deploys via Vercel + GitHub Pages (Actions).
 
 ## Develop
 
@@ -18,26 +16,22 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173/
-
 ## Build
 
 ```bash
-npm run build
+npm run build:gh     # → GitHub Pages (base: /jaygopal-portfolio/)
+npm run build:vercel # → Vercel (base: /)
 ```
-
-Output goes to `dist/`.
-
-## Deploy
-
-Pushes to `main` trigger the GitHub Actions workflow (`.github/workflows/deploy.yml`) which builds and deploys to GitHub Pages.
 
 ## Sections
 
-- Hero — name, tagline (with ASCII glitch-ripple effect)
-- About — bio + tags
-- Tech stack — chips
-- Journey — research + experience log
-- GitHub stats — live API + contribution graph
-- Projects — PitwallEar · RescueMesh · D8FN · SIH SCHM
-- Contact — email + form
+Hero · About · Tech Stack · Journey · GitHub Stats · Projects · Contact
+
+Projects featured: [PitwallEar](https://pitwallear.onrender.com) (multi-agent F1 stress analysis) · [RescueMesh](https://github.com/j4yop/RescueMesh) (offline AI disaster mesh) · D8FN (physics-informed flood mapping, research).
+
+## Contact
+
+- **Email:** jay20gopal@gmail.com
+- **LinkedIn:** [linkedin.com/in/jaygopaltripathy](https://linkedin.com/in/jaygopaltripathy)
+- **GitHub:** [github.com/j4yop](https://github.com/j4yop)
+- Open to research collaborations, internships, and engineering roles.
