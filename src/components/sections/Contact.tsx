@@ -18,20 +18,20 @@ export function Contact() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-            <div className="md:col-span-4 md:-ml-4 text-center md:text-left">
-              <h3 className="text-3xl md:text-4xl font-black uppercase mb-3 leading-tight">
+            <div className="md:col-span-4 md:-ml-4 text-left">
+              <h3 className="text-4xl md:text-5xl font-black uppercase mb-4 leading-[1.05]">
                 Let's<br />build<br />something.
               </h3>
-              <p className="font-mono text-sm mb-6 text-gray-700">
+              <p className="font-mono text-base mb-8 text-gray-700 leading-relaxed">
                 Open to research collaborations, internships, and engineering roles.
               </p>
-              <div className="space-y-3 font-mono text-sm font-bold inline-block text-left">
+              <div className="space-y-4 font-mono text-base font-bold inline-block text-left">
                 <a
                   href="mailto:jay20gopal@gmail.com"
                   className="flex items-center gap-3 hover:text-neo-blue transition-colors group"
                 >
-                  <div className="w-9 h-9 bg-black text-white flex items-center justify-center group-hover:bg-neo-blue group-hover:text-black transition-colors shrink-0">
-                    <i className="ri-mail-send-line" />
+                  <div className="w-10 h-10 bg-black text-white flex items-center justify-center group-hover:bg-neo-blue group-hover:text-black transition-colors shrink-0">
+                    <i className="ri-mail-send-line text-lg" />
                   </div>
                   <span className="truncate">jay20gopal@gmail.com</span>
                 </a>
@@ -39,14 +39,14 @@ export function Contact() {
                   href="tel:+919437342042"
                   className="flex items-center gap-3 hover:text-neo-green transition-colors group"
                 >
-                  <div className="w-9 h-9 bg-black text-white flex items-center justify-center group-hover:bg-neo-green group-hover:text-black transition-colors shrink-0">
-                    <i className="ri-phone-line" />
+                  <div className="w-10 h-10 bg-black text-white flex items-center justify-center group-hover:bg-neo-green group-hover:text-black transition-colors shrink-0">
+                    <i className="ri-phone-line text-lg" />
                   </div>
                   <span>+91-9437342042</span>
                 </a>
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 bg-black text-white flex items-center justify-center shrink-0">
-                    <i className="ri-map-pin-line" />
+                  <div className="w-10 h-10 bg-black text-white flex items-center justify-center shrink-0">
+                    <i className="ri-map-pin-line text-lg" />
                   </div>
                   <span>Chennai, IN · Remote</span>
                 </div>
