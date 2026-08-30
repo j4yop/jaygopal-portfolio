@@ -1,22 +1,73 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#000" stroke-width="1" opacity="0.15"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#000" stroke-width="1" opacity="0.2"/>
     </pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBFF48"/>
+      <stop offset="100%" stop-color="#FF9F1C"/>
+    </linearGradient>
   </defs>
-  <rect width="1600" height="900" fill="#FBFF48"/>
+  <rect width="1600" height="900" fill="url(#bg)"/>
   <rect width="1600" height="900" fill="url(#grid)"/>
-  <g font-family="'Space Grotesk','Arial Black',sans-serif" font-weight="900" fill="#000">
-    <rect x="80" y="80" width="240" height="60" fill="#fff" stroke="#000" stroke-width="4"/>
-    <text x="100" y="125" font-size="32" font-family="'JetBrains Mono',monospace">PITWALLEAR</text>
-    <text x="80" y="320" font-size="160" letter-spacing="-4">F1 RADIO.</text>
-    <text x="80" y="500" font-size="160" letter-spacing="-4" fill="#fff" stroke="#000" stroke-width="4">DRIVER STRESS.</text>
-    <text x="80" y="680" font-size="160" letter-spacing="-4">DECODED.</text>
-    <g transform="translate(1080,360)">
-      <circle r="180" fill="#FF70A6" stroke="#000" stroke-width="6"/>
-      <text text-anchor="middle" y="-30" font-size="64">🎙️</text>
-      <text text-anchor="middle" y="60" font-size="36" font-family="'JetBrains Mono',monospace">MULTI-AGENT</text>
-      <text text-anchor="middle" y="100" font-size="36" font-family="'JetBrains Mono',monospace">AI</text>
+
+  <!-- Tag -->
+  <g transform="translate(80,80)">
+    <rect width="320" height="64" fill="#121212" stroke="#000" stroke-width="4"/>
+    <text x="20" y="44" font-family="'JetBrains Mono',monospace" font-size="28" font-weight="700" fill="#33FF57">PITWALLEAR.exe</text>
+  </g>
+
+  <!-- Headline -->
+  <g font-family="'Space Grotesk','Arial Black',sans-serif" font-weight="900" fill="#121212">
+    <text x="80" y="280" font-size="120" letter-spacing="-4">F1 RADIO.</text>
+    <text x="80" y="410" font-size="120" letter-spacing="-4" fill="#fff" stroke="#121212" stroke-width="3">DRIVER STRESS.</text>
+    <text x="80" y="540" font-size="120" letter-spacing="-4">DECODED.</text>
+  </g>
+
+  <!-- Sub -->
+  <g transform="translate(80,580)">
+    <rect width="900" height="56" fill="#fff" stroke="#121212" stroke-width="4"/>
+    <text x="20" y="38" font-family="'JetBrains Mono',monospace" font-size="22" font-weight="700" fill="#121212">
+      Multi-agent AI · Granger causality · Transfer entropy · Whisper + wav2vec2 + RoBERTa
+    </text>
+  </g>
+
+  <!-- Tags row -->
+  <g transform="translate(80,680)" font-family="'JetBrains Mono',monospace" font-size="20" font-weight="700">
+    <g><rect width="140" height="44" fill="#121212"/><text x="14" y="30" fill="#FBFF48">FastAPI</text></g>
+    <g transform="translate(150,0)"><rect width="140" height="44" fill="#121212"/><text x="14" y="30" fill="#33FF57">React + Vite</text></g>
+    <g transform="translate(300,0)"><rect width="160" height="44" fill="#121212"/><text x="14" y="30" fill="#FF70A6">TypeScript</text></g>
+    <g transform="translate(470,0)"><rect width="200" height="44" fill="#121212"/><text x="14" y="30" fill="#FBFF48">HuggingFace models</text></g>
+    <g transform="translate(680,0)"><rect width="160" height="44" fill="#121212"/><text x="14" y="30" fill="#33FF57">FastF1 + OpenF1</text></g>
+  </g>
+
+  <!-- Right diagram: mood → pace -->
+  <g transform="translate(1080,200)">
+    <rect width="440" height="500" fill="#121212" stroke="#000" stroke-width="6"/>
+    <text x="20" y="44" font-family="'JetBrains Mono',monospace" font-size="16" font-weight="700" fill="#33FF57">/// CO-DRIVER CALL</text>
+
+    <g transform="translate(40,100)">
+      <rect width="360" height="60" fill="#FBFF48" stroke="#fff" stroke-width="2"/>
+      <text x="16" y="38" font-family="'JetBrains Mono',monospace" font-size="18" font-weight="700" fill="#121212">MOOD: STRESSED</text>
+      <text x="240" y="38" font-family="'JetBrains Mono',monospace" font-size="18" font-weight="700" fill="#121212">0.87</text>
+    </g>
+
+    <g transform="translate(40,180)">
+      <rect width="360" height="60" fill="#FF70A6" stroke="#fff" stroke-width="2"/>
+      <text x="16" y="38" font-family="'JetBrains Mono',monospace" font-size="18" font-weight="700" fill="#121212">PACE DELTA: +0.42s</text>
+      <text x="280" y="38" font-family="'JetBrains Mono',monospace" font-size="18" font-weight="700" fill="#121212">↑</text>
+    </g>
+
+    <g transform="translate(40,260)">
+      <rect width="360" height="60" fill="#FF9F1C" stroke="#fff" stroke-width="2"/>
+      <text x="16" y="38" font-family="'JetBrains Mono',monospace" font-size="18" font-weight="700" fill="#121212">LEAD TIME: 2 LAPS</text>
+    </g>
+
+    <g transform="translate(40,360)">
+      <rect width="360" height="100" fill="#33FF57" stroke="#fff" stroke-width="2"/>
+      <text x="16" y="34" font-family="'JetBrains Mono',monospace" font-size="14" font-weight="700" fill="#121212">// RECOMMENDATION</text>
+      <text x="16" y="68" font-family="'Space Grotesk',sans-serif" font-size="16" font-weight="700" fill="#121212">Suggest pit window at lap 18</text>
+      <text x="16" y="90" font-family="'Space Grotesk',sans-serif" font-size="16" font-weight="700" fill="#121212">before degradation compounds</text>
     </g>
   </g>
 </svg>
