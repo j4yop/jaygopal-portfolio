@@ -1,7 +1,5 @@
 # Jay Gopal Tripathy — Portfolio
 
-Personal site — React + Vite + TypeScript, NeoBrutalist design.
-
 **Live:** [jaygopal-portfolio.vercel.app](https://jaygopal-portfolio.vercel.app)
 
 ---
@@ -39,18 +37,9 @@ Personal site — React + Vite + TypeScript, NeoBrutalist design.
 - **Projects** — featured work cards
 - **Contact** — email, phone, location + interactive keyboard
 
-### Featured Projects
-
-- **PitwallEar** → [pitwallear.onrender.com](https://pitwallear.onrender.com) — multi-agent AI for F1 driver stress analysis
-- **RescueMesh** → [github.com/j4yop/RescueMesh](https://github.com/j4yop/RescueMesh) — offline AI disaster-response mesh (Gemma 4 on-device)
-- **D8FN** — physics-informed deep learning for SAR flood mapping (research, ongoing)
-
----
-
 ### Contact
 
 - **Email** → jay20gopal@gmail.com
 - **LinkedIn** → [linkedin.com/in/jaygopaltripathy](https://linkedin.com/in/jaygopaltripathy)
-- **GitHub** → [github.com/j4yop](https://github.com/j4yop)
 
 Open to research collaborations, internships, and engineering roles.
