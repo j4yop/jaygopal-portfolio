@@ -4,22 +4,12 @@ import { InteractiveParticles } from "../ui/interactive-particles";
 import { ErrorBoundary } from "../ErrorBoundary";
 
 function ParticleName({ src }: { src: string }) {
-  const [supported, setSupported] = useState<boolean | null>(null);
-
-  useEffect(() => {
-    try {
-      const c = document.createElement("canvas");
-      const gl = c.getContext("webgl2") || c.getContext("webgl") || c.getContext("experimental-webgl");
-      setSupported(!!gl);
-    } catch {
-      setSupported(false);
-    }
-  }, []);
-
-  if (supported !== true) return null;
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
 
   return (
-    <div className="absolute inset-0 z-0">
+    <div className="absolute inset-0 z-0 pointer-events-none">
       <ErrorBoundary>
         <InteractiveParticles
           src={src}
