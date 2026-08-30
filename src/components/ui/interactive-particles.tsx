@@ -258,10 +258,16 @@ export function InteractiveParticles({
     const camera = new THREE.PerspectiveCamera(50, view.width / view.height, 1, 10000);
     camera.position.z = 300;
 
-    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.setSize(view.width, view.height);
-    renderer.setClearColor(0x000000, 0);
+    let renderer: THREE.WebGLRenderer;
+    try {
+      renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setSize(view.width, view.height);
+      renderer.setClearColor(0x000000, 0);
+    } catch (e) {
+      console.warn("InteractiveParticles: WebGL init failed", e);
+      return;
+    }
 
     let fovHeight = 2 * Math.tan((camera.fov * Math.PI) / 180 / 2) * camera.position.z;
 
