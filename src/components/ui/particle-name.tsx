@@ -47,7 +47,10 @@ export function ParticleName({ src, className, color = "#121212" }: ParticleName
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
 
-    const buildParticlesFromImage = (img: HTMLImageElement) => {
+    const BUILD_ANIM_DURATION = 1500; // ms for particles to assemble
+const BUILD_ANIM_START = Date.now();
+
+const buildParticlesFromImage = (img: HTMLImageElement) => {
       // Sample image at a low resolution into particles
       const sampleW = 220;
       const ratio = img.height / img.width;
@@ -66,7 +69,6 @@ export function ParticleName({ src, className, color = "#121212" }: ParticleName
       const offsetY = (h - sampleH * scale) / 2;
 
       particles = [];
-      // Sample every other pixel for performance
       for (let py = 0; py < sampleH; py += 1) {
         for (let px = 0; px < sampleW; px += 1) {
           const i = (py * sampleW + px) * 4;
@@ -74,14 +76,17 @@ export function ParticleName({ src, className, color = "#121212" }: ParticleName
           if (grey > 100) {
             const homeX = offsetX + px * scale;
             const homeY = offsetY + py * scale;
+            // Start particles in a tight cloud around home, then they settle
+            const angle = Math.random() * Math.PI * 2;
+            const dist = Math.random() * 40;
             particles.push({
               homeX,
               homeY,
-              x: homeX + (Math.random() - 0.5) * 800,
-              y: homeY + (Math.random() - 0.5) * 800,
-              vx: 0,
-              vy: 0,
-              size: 1.2 + grey / 255 * 1.4,
+              x: homeX + Math.cos(angle) * dist,
+              y: homeY + Math.sin(angle) * dist,
+              vx: (Math.random() - 0.5) * 2,
+              vy: (Math.random() - 0.5) * 2,
+              size: 1.5 + grey / 255 * 2,
               grey,
             });
           }

@@ -22,7 +22,7 @@ function NameParticles({ src }: { src: string }) {
 
 export function Hero({ glitch: Glitch }: { glitch: ComponentType<any> }) {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center px-4 pt-20 relative overflow-hidden border-b-4 border-black bg-neo-white">
+    <section className="min-h-screen flex flex-col justify-center items-center px-4 pt-20 relative overflow-hidden border-b-4 border-black bg-neo-yellow">
       {/* Particle name — overlays the text on capable browsers */}
       <ParticleName src={`${import.meta.env.BASE_URL}images/name-particles.png`} />
 
