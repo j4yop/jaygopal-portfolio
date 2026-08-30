@@ -45,5 +45,3 @@ npm run build:vercel
 
 - **Email** → jay20gopal@gmail.com
 - **LinkedIn** → [linkedin.com/in/jaygopaltripathy](https://linkedin.com/in/jaygopaltripathy)
-
-Open to research collaborations, internships, and engineering roles.
