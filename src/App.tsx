@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { AsciiGlitchRipple } from "./components/ui/ascii-glitch-ripple";
 import { Hero } from "./components/sections/Hero";
 import { Marquee } from "./components/sections/Marquee";
@@ -9,35 +9,11 @@ import { GitHubStats } from "./components/sections/GitHubStats";
 import { Projects } from "./components/sections/Projects";
 import { Contact } from "./components/sections/Contact";
 import { Footer } from "./components/sections/Footer";
-import { Cursor } from "./components/Cursor";
 import { Nav } from "./components/Nav";
 import { ProgressBar } from "./components/ProgressBar";
+import { MagneticCursor } from "./components/ui/magnetic-cursor";
 
 export default function App() {
-  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
-  const [hover, setHover] = useState(false);
-
-  useEffect(() => {
-    const onMove = (e: MouseEvent) =>
-      setCursorPos({ x: e.clientX, y: e.clientY });
-    const onOver = (e: MouseEvent) => {
-      const t = e.target as HTMLElement;
-      if (t.closest("a, button, input, textarea, .cursor-hover")) setHover(true);
-    };
-    const onOut = (e: MouseEvent) => {
-      const t = e.target as HTMLElement;
-      if (t.closest("a, button, input, textarea, .cursor-hover")) setHover(false);
-    };
-    window.addEventListener("mousemove", onMove);
-    document.addEventListener("mouseover", onOver);
-    document.addEventListener("mouseout", onOut);
-    return () => {
-      window.removeEventListener("mousemove", onMove);
-      document.removeEventListener("mouseover", onOver);
-      document.removeEventListener("mouseout", onOut);
-    };
-  }, []);
-
   useEffect(() => {
     const els = document.querySelectorAll(".reveal");
     const io = new IntersectionObserver(
@@ -49,20 +25,27 @@ export default function App() {
   }, []);
 
   return (
-    <div className="text-neo-black font-display antialiased selection:bg-neo-black selection:text-neo-yellow">
-      <Cursor x={cursorPos.x} y={cursorPos.y} hover={hover} />
-      <ProgressBar />
-      <Nav />
+    <MagneticCursor
+      magneticFactor={0.45}
+      blendMode="exclusion"
+      cursorSize={28}
+      cursorColor="#FFFDF5"
+      contrastBoost={1.5}
+    >
+      <div className="text-neo-black font-display antialiased selection:bg-neo-black selection:text-neo-yellow">
+        <ProgressBar />
+        <Nav />
 
-      <Hero glitch={AsciiGlitchRipple} />
-      <Marquee />
-      <About />
-      <Skills />
-      <Journey />
-      <GitHubStats />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+        <Hero glitch={AsciiGlitchRipple} />
+        <Marquee />
+        <About />
+        <Skills />
+        <Journey />
+        <GitHubStats />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </MagneticCursor>
   );
 }

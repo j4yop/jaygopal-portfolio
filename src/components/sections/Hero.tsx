@@ -40,6 +40,7 @@ export function Hero({ glitch: Glitch }: { glitch: ComponentType<any> }) {
         <div className="flex flex-col md:flex-row justify-center gap-6 reveal">
           <a
             href="#projects"
+            data-magnetic
             className="bg-black text-white border-2 border-black px-10 py-5 text-xl font-bold shadow-hard hover:bg-neo-green hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-hover"
           >
             VIEW DATABASE
