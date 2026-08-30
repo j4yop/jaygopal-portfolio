@@ -1,35 +1,43 @@
 # Jay Gopal Tripathy — Portfolio
 
-NeoBrutalist personal portfolio for Jay Gopal Tripathy — B.Tech CSE (AI & Robotics) at VIT Chennai.
+Personal portfolio for Jay Gopal Tripathy — B.Tech CSE (AI & Robotics) at VIT Chennai.
 
-**Live demo:** https://j4yop.github.io/jaygopal-portfolio (after GitHub Pages is enabled)
-**Author:** Jay Gopal Tripathy — [jay20gopal@gmail.com](mailto:jay20gopal@gmail.com) · [GitHub](https://github.com/j4yop) · [LinkedIn](https://linkedin.com/in/jaygopaltripathy)
+**Live:** https://j4yop.github.io/jaygopal-portfolio/
 
 ## Stack
 
-- HTML / TailwindCSS (CDN)
-- Vanilla JS for cursor, reveal, scroll progress, GitHub stats
-- Self-contained — no build step
+- React 19 + TypeScript + Vite
+- TailwindCSS 3
+- shadcn-style UI components (vendored)
+- GitHub Actions → GitHub Pages
 
-## Sections
-
-- Hero — name, tagline, tech chips
-- About — bio + tags
-- Tech stack — chips
-- Journey — education + experience log
-- Coding stats — live GitHub stats
-- Projects — PitwallEar · RescueMesh · D8FN
-- Contact — email + form
-
-## Run locally
+## Develop
 
 ```bash
-# Just open it
-open index.html
-# or serve it
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
+
+Open http://localhost:5173/
+
+## Build
+
+```bash
+npm run build
+```
+
+Output goes to `dist/`.
 
 ## Deploy
 
-Push to GitHub, enable Pages on `main` branch → root. Site will be live at `https://<user>.github.io/jaygopal-portfolio/`.
+Pushes to `main` trigger the GitHub Actions workflow (`.github/workflows/deploy.yml`) which builds and deploys to GitHub Pages.
+
+## Sections
+
+- Hero — name, tagline (with ASCII glitch-ripple effect)
+- About — bio + tags
+- Tech stack — chips
+- Journey — research + experience log
+- GitHub stats — live API + contribution graph
+- Projects — PitwallEar · RescueMesh · D8FN · SIH SCHM
+- Contact — email + form
