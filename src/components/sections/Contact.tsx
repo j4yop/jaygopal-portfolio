@@ -17,13 +17,64 @@ export function Contact() {
             </span>
           </div>
 
-          <div className="w-full" style={{ height: "520px" }}>
-            <TypingKeyboard
-              autoTypeText="Hi Jay — open to research, internships, and engineering roles. Drop me a message.       "
-              accentColor="#3b82f6"
-              secondaryAccent="#a855f7"
-              scale={0.85}
-            />
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div className="md:col-span-4 md:-ml-4">
+              <h3 className="text-3xl md:text-4xl font-black uppercase mb-4 leading-tight">
+                Let's<br />build<br />something.
+              </h3>
+              <p className="font-mono text-sm mb-6 text-gray-700">
+                Open to research collaborations, internships, and engineering roles.
+              </p>
+              <div className="space-y-3 font-mono text-sm font-bold">
+                <a
+                  href="mailto:jay20gopal@gmail.com"
+                  className="flex items-center gap-3 hover:text-neo-blue transition-colors group"
+                >
+                  <div className="w-9 h-9 bg-black text-white flex items-center justify-center group-hover:bg-neo-blue group-hover:text-black transition-colors shrink-0">
+                    <i className="ri-mail-send-line" />
+                  </div>
+                  <span className="truncate">jay20gopal@gmail.com</span>
+                </a>
+                <a
+                  href="tel:+919437342042"
+                  className="flex items-center gap-3 hover:text-neo-green transition-colors group"
+                >
+                  <div className="w-9 h-9 bg-black text-white flex items-center justify-center group-hover:bg-neo-green group-hover:text-black transition-colors shrink-0">
+                    <i className="ri-phone-line" />
+                  </div>
+                  <span>+91-9437342042</span>
+                </a>
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 bg-black text-white flex items-center justify-center shrink-0">
+                    <i className="ri-map-pin-line" />
+                  </div>
+                  <span>Chennai, IN · Remote</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 bg-black text-white flex items-center justify-center shrink-0">
+                    <i className="ri-github-fill" />
+                  </div>
+                  <span>github.com/j4yop</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 bg-black text-white flex items-center justify-center shrink-0">
+                    <i className="ri-linkedin-fill" />
+                  </div>
+                  <span>linkedin.com/in/jaygopaltripathy</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="md:col-span-8 -mr-4">
+              <div className="w-full" style={{ height: "460px" }}>
+                <TypingKeyboard
+                  autoTypeText="Hi Jay — open to research, internships, and engineering roles. Drop me a message.       "
+                  accentColor="#3b82f6"
+                  secondaryAccent="#a855f7"
+                  scale={0.8}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
