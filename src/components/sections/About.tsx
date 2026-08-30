@@ -4,7 +4,7 @@ export function About() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
         <div className="md:col-span-4 reveal">
           <div className="aspect-square bg-gray-200 border-4 border-black relative shadow-hard overflow-hidden group">
-            <img src="/images/avatar.svg?v=2" alt="Jay Gopal Tripathy" className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-300" />
+            <img src={`${import.meta.env.BASE_URL}images/avatar.svg`} alt="Jay Gopal Tripathy" className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-300" />
             <span className="absolute top-2 left-2 bg-neo-red text-white px-2 font-mono text-xs border border-black z-10">AVATAR.JPG</span>
           </div>
         </div>
